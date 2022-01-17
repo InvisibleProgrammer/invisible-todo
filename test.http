@@ -1,0 +1,27 @@
+### HealthCheck
+GET http://localhost:8080/diag/health
+
+
+### List all todo items
+GET http://localhost:8080/todo
+
+
+### Add new item
+POST http://localhost:8080/todo
+
+{
+    "title": "first todo",
+    "description": "my fanciest description"
+}
+
+### Updates a todo item
+PUT http://localhost:8080/todo/1
+
+{
+    "id" : 1,
+    "title": "modified first todo",
+    "description": "modified description"
+}
+
+### Remove a todo item
+DELETE http://localhost:8080/todo/1
